@@ -114,6 +114,19 @@ export const BackersPartners = (): JSX.Element => {
             );
           })}
         </div>
+        
+        {/* CTA Section */}
+        <div className="flex flex-col items-center justify-center w-full pt-16 gap-6 border-t border-[#363636]">
+          <h3 className="text-white text-xl font-semibold text-center">
+            WANT TO PARTNER WITH STAKENOVA?
+          </h3>
+          <p className="text-gray-400 text-base text-center">
+            Reach out to us and let’s build the future together
+          </p>
+          <Button variant="default" className="bg-azure text-black hover:bg-azure/90 px-6 py-3 text-base font-semibold" >
+            CONTACT BUTTON
+          </Button>
+        </div>
       </div>
     </section>
   );
