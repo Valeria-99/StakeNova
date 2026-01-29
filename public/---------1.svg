@@ -1,0 +1,31 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_236_29101)">
+<mask id="path-1-inside-1_236_29101" fill="white">
+<path d="M0 0H16V16H0V0Z"/>
+</mask>
+<path d="M0 0V-1H-1V0H0ZM0 0V1H16V0V-1H0V0ZM0 16H1V0H0H-1V16H0Z" fill="#E9F3FF" mask="url(#path-1-inside-1_236_29101)"/>
+<mask id="path-3-inside-2_236_29101" fill="white">
+<path d="M120 0H104V16H120V0Z"/>
+</mask>
+<path d="M120 0V-1H121V0H120ZM120 0V1H104V0V-1H120V0ZM120 16H119V0H120H121V16H120Z" fill="#E9F3FF" mask="url(#path-3-inside-2_236_29101)"/>
+<mask id="path-5-inside-3_236_29101" fill="white">
+<path d="M0 120H16V104H0V120Z"/>
+</mask>
+<path d="M0 120V121H-1V120H0ZM0 120V119H16V120V121H0V120ZM0 104H1V120H0H-1V104H0Z" fill="#E9F3FF" mask="url(#path-5-inside-3_236_29101)"/>
+<mask id="path-7-inside-4_236_29101" fill="white">
+<path d="M120 120H104V104H120V120Z"/>
+</mask>
+<path d="M120 120V121H121V120H120ZM120 120V119H104V120V121H120V120ZM120 104H119V120H120H121V104H120Z" fill="#E9F3FF" mask="url(#path-7-inside-4_236_29101)"/>
+<path d="M58.6213 45.8357V63.8357L70.6213 69.8357" stroke="#3E97FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M59.9946 30.0002C65.8151 29.9992 71.5101 31.6913 76.3857 34.8703C81.2612 38.0493 85.1067 42.578 87.4535 47.9044C89.8003 53.2307 90.547 59.1247 89.6026 64.868C88.6581 70.6113 86.0634 75.9558 82.1346 80.2502" stroke="#3E97FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M31.4945 50.6248C30.5386 53.5307 30.0327 56.5658 29.9945 59.6248" stroke="#3E97FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M32.4849 71.9998C34.1694 75.8752 36.6536 79.3511 39.7749 82.1998" stroke="#3E97FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M37.9025 39.7045C38.7396 38.7932 39.6323 37.9346 40.5755 37.1335" stroke="#3E97FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M49.9269 88.2604C57.408 90.9255 65.6406 90.5155 72.8199 87.1204" stroke="#3E97FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_236_29101">
+<rect width="120" height="120" fill="white"/>
+</clipPath>
+</defs>
+</svg>

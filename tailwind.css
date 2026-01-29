@@ -1,0 +1,265 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+  --14-AG-font-family: "Lexend", Helvetica;
+  --14-AG-font-size: 14px;
+  --14-AG-font-style: normal;
+  --14-AG-font-weight: 400;
+  --14-AG-letter-spacing: 0.2800000000000001px;
+  --14-AG-line-height: 20px;
+  --14-font-family: "Lexend", Helvetica;
+  --14-font-size: 14px;
+  --14-font-style: normal;
+  --14-font-weight: 400;
+  --14-letter-spacing: 0.2800000000000001px;
+  --14-line-height: 14px;
+  --16-AG-font-family: "Lexend", Helvetica;
+  --16-AG-font-size: 16px;
+  --16-AG-font-style: normal;
+  --16-AG-font-weight: 400;
+  --16-AG-letter-spacing: 0.64px;
+  --16-AG-line-height: 24px;
+  --16-font-family: "Lexend", Helvetica;
+  --16-font-size: 16px;
+  --16-font-style: normal;
+  --16-font-weight: 600;
+  --16-letter-spacing: 0.32px;
+  --16-line-height: 16px;
+  --18-font-family: "Lexend", Helvetica;
+  --18-font-size: 18px;
+  --18-font-style: normal;
+  --18-font-weight: 400;
+  --18-letter-spacing: 0.36px;
+  --18-line-height: 28px;
+  --24-AG-font-family: "Lexend", Helvetica;
+  --24-AG-font-size: 24px;
+  --24-AG-font-style: normal;
+  --24-AG-font-weight: 400;
+  --24-AG-letter-spacing: 0.96px;
+  --24-AG-line-height: 36px;
+  --32-AG-font-family: "Lexend", Helvetica;
+  --32-AG-font-size: 32px;
+  --32-AG-font-style: normal;
+  --32-AG-font-weight: 400;
+  --32-AG-letter-spacing: 1.28px;
+  --32-AG-line-height: 48px;
+  --60-AG-font-family: "Lexend", Helvetica;
+  --60-AG-font-size: 60px;
+  --60-AG-font-style: normal;
+  --60-AG-font-weight: 400;
+  --60-AG-letter-spacing: 2.4px;
+  --60-AG-line-height: 76px;
+  --azure: rgba(62, 151, 255, 1);
+  --bg-star: rgba(0, 0, 0, 1);
+  --black: rgba(0, 0, 0, 1);
+  --btn-font-family: "Lexend", Helvetica;
+  --btn-font-size: 16px;
+  --btn-font-style: normal;
+  --btn-font-weight: 500;
+  --btn-letter-spacing: 0.32px;
+  --btn-line-height: 24px;
+  --jet: rgba(54, 54, 54, 1);
+  --moon: rgba(233, 243, 255, 1);
+  --platinum: rgba(146, 161, 177, 1);
+  --silver: rgba(110, 125, 141, 1);
+  --white: rgba(255, 255, 255, 1);
+  --white-21: rgba(255, 255, 255, 0.21);
+  --x8-azure: rgba(62, 151, 255, 0.08);
+}
+
+:root {
+  --animate-spin: spin 1s linear infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-fade-up {
+  animation: fade-up 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-marquee {
+  animation: marquee var(--duration) infinite linear;
+}
+
+.animate-marquee-vertical {
+  animation: marquee-vertical var(--duration) linear infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 8s infinite;
+}
+
+.animate-spin {
+  animation: var(--animate-spin);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes image-glow {
+  0% {
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.74, 0.25, 0.76, 1);
+  }
+
+  10% {
+    opacity: 0.7;
+    animation-timing-function: cubic-bezier(0.12, 0.01, 0.08, 0.99);
+  }
+
+  to {
+    opacity: 0.4;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes shimmer {
+  0%,
+  90%,
+  to {
+    background-position: calc(-100% - var(--shimmer-width)) 0;
+  }
+
+  30%,
+  60% {
+    background-position: calc(100% + var(--shimmer-width)) 0;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+@keyframes marquee-vertical {
+  0% {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: transparent;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: transparent;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
